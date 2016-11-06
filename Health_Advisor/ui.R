@@ -1,4 +1,4 @@
-setwd("~/Documents/archHack/Health_Advisor")
+# setwd("~/Documents/archHack/Health_Advisor")
 library(shiny)
 suppressPackageStartupMessages(c(library(shinythemes),
                                  library(shiny),
@@ -6,7 +6,8 @@ suppressPackageStartupMessages(c(library(shinythemes),
                                  library(stringr),
                                  library(markdown),
                                  library(stylo),
-                                 library(plotly)))
+                                 library(plotly),
+                                 library(caret)))
 
 shinyUI(
   navbarPage(
@@ -20,14 +21,20 @@ shinyUI(
                       p("")),
                column(8,
                       tags$br(),
-                      tags$hr(),
-                      h1("Health Care AI Advisor (Self-Motivated Care System)"),
-                      h3("Predictive Analytics and Preventive Measures"),
+                      h1("Self-Motivated AI Health Care System"),
+                      h2("Predictive Analytics and Preventive Measures"),
                       tags$br(),
+                      h4("Imagine we can prevent any potential disease and know sooner than the doctor?"),
+                      h4("The average cost of health check up is about 188 dollar. What if we can save that money forever, also have unlimited access to free health check up."),
+                      h4("Imagine if we have access to AI-diagnosis system regarding all kinds of diseases?"),
+                      h4("Imagine if we have personal one-to-one health care assistent who guides and encourage us and have healthier life?"),
+                      h4("Imagine we can prevent any potential disease and know sooner than the doctor?"),
+                      h4("This web-app is the prototype of those futuristic idea."),
                       tags$hr(),
+                      tags$br(),
                       
-                      img(src = "2.jpg", height=800, width=1200),
-                      align = "center"),
+                      img(src = "2.jpg", height=800, width=1200)
+               ),
                column(2,
                       p(""))
              )
@@ -62,7 +69,7 @@ shinyUI(
                         ),
                         
                         column(3,
-                               h3("Preventing Cancer at Earily Stage Project with AI")
+                               h3("Preventing Cancer at Earily Stage with AI")
                         )
                       ),
                       
@@ -208,7 +215,7 @@ shinyUI(
                       fluidRow(
                         column(3),
                         column(6,
-                               h1("Self Heart Disease Diagnosis"),
+                               h1("AI Heart Disease Diagnosis"),
                                align = "center"
                         ),
                         column(3)
@@ -226,7 +233,7 @@ shinyUI(
                         ),
                         
                         column(3,
-                               h3("Preventing Heart Disease in Earily Stage Project with AI.")
+                               h3("Preventing Heart Disease in Earily Stage with AI")
                         )
                       ),
                       

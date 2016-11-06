@@ -1,5 +1,6 @@
 # load models
-setwd("~/Documents/archHack/Health_Advisor")
+# setwd("~/Documents/archHack/Health_Advisor")
+library(mlr)
 
 pre_canc <- readRDS("./data/pre_canc.rds")
 model_canc <- readRDS("./data/model_canc.rds")

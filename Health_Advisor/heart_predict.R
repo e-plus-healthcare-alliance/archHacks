@@ -1,5 +1,6 @@
 # load models
-setwd("~/Documents/archHack/Health_Advisor")
+# setwd("~/Documents/archHack/Health_Advisor")
+library(mlr)
 
 pre_heart <- readRDS("./data/pre_heart.rds")
 model_heart <-readRDS("./data/model_heart.rds")
